@@ -39,13 +39,13 @@ jobs:
           
       - name: Github Configurations
         run: |
-          git config --global user.name "Github Actions"
-          git config --global user.email "action@github.com"
+          git config --global user.name "Protyay Mondal"
+          git config --global user.email "protyaymondal32@gmail.com"
           git pull
           
       - name: Update Template
         run: |
-          node updater.js ${{ github.repository_owner }} atom
+          node updater.js ${{ github.repository_owner }} dracula
         env:
           GHT: ${{ secrets.GHT }}
           
